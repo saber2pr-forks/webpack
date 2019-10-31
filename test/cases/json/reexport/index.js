@@ -1,7 +1,4 @@
-import { e, f } from "./reexport";
-import { e as e2, f as f2 } from "./reexport?1";
-
-import("./reexport?1");
+import { e, f, fNamed, fStar, fStarPartial } from "./reexport";
 
 it("should be possible to reexport json data", function() {
 	expect(e.aa).toBe(1);
@@ -11,4 +8,14 @@ it("should be possible to reexport json data", function() {
 		default: "default",
 		__esModule: true
 	});
+	expect(fNamed).toBe("named");
+	const _fStar = fStar;
+	expect(_fStar).toEqual(
+		nsObj({
+			named: "named",
+			default: { named: "named", default: "default", __esModule: true }
+		})
+	);
+	expect(_fStar.__esModule).toBe(true);
+	expect(fStarPartial.default.name).toBe("named");
 });
