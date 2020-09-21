@@ -54,7 +54,7 @@ export type EntryStatic = EntryObject | EntryUnnamed;
 /**
  * Module(s) that are loaded upon startup.
  */
-export type EntryItem = [string, ...string[]] | string;
+export type EntryItem = string[] | string;
 /**
  * The method of loading chunks (methods included by default are 'jsonp' (web), 'importScripts' (WebWorker), 'require' (sync node.js), 'async-node' (async node.js), but others might be added by plugins).
  */
