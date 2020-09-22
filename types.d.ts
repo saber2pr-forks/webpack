@@ -7848,6 +7848,7 @@ declare abstract class RuntimeTemplate {
 	returningFunction(returnValue?: any, args?: string): string;
 	basicFunction(args?: any, body?: any): string;
 	destructureArray(items?: any, value?: any): string;
+	declareConst(name?: any, init?: any): string;
 	iife(args?: any, body?: any): string;
 	forEach(variable?: any, array?: any, body?: any): string;
 

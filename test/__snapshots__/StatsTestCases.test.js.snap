@@ -125,15 +125,14 @@ webpack x.x.x compiled successfully in X ms"
 
 exports[`StatsTestCases should print correct stats for asset 1`] = `
 "asset 89a353e9c515885abd8e.png 14.6 KiB [emitted] [immutable] (auxiliary name: main)
-asset bundle.js 12.2 KiB [emitted] (name: main)
+asset bundle.js 12.1 KiB [emitted] (name: main)
 asset static/file.html 12 bytes [emitted] (auxiliary name: main)
+orphan modules 8.82 KiB [orphan] 2 modules
 runtime modules 1.06 KiB 2 modules
-asset modules 8.9 KiB (javascript) 14.6 KiB (asset)
+cacheable modules 9.04 KiB (javascript) 14.6 KiB (asset)
+  ./index.js + 2 modules 8.96 KiB [built] [code generated]
   ./images/file.png 42 bytes (javascript) 14.6 KiB (asset) [built] [code generated]
-  ./images/file.svg 915 bytes [built] [code generated]
-  ./images/file.jpg 7.92 KiB [built] [code generated]
   ./static/file.html 42 bytes (javascript) 12 bytes (asset) [built] [code generated]
-./index.js 150 bytes [built] [code generated]
 webpack x.x.x compiled successfully in X ms"
 `;
 
