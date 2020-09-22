@@ -234,7 +234,7 @@ export type RuleSetCondition =
 			/**
 			 * Logical NOT.
 			 */
-			not?: RuleSetConditions;
+			not?: RuleSetCondition;
 			/**
 			 * Logical OR.
 			 */
