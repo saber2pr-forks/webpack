@@ -5383,11 +5383,11 @@ declare class NormalModule extends Module {
 		 */
 		loaders: LoaderItem[];
 		/**
-		 * path + query of the real resource
+		 * path + query + fragment of the real resource
 		 */
 		resource: string;
 		/**
-		 * path + query of the matched resource (virtual)
+		 * path + query + fragment of the matched resource (virtual)
 		 */
 		matchResource: string;
 		/**
@@ -9856,6 +9856,7 @@ declare namespace exports {
 		export let REGEXP_LOADERS: RegExp;
 		export let QUERY: string;
 		export let REGEXP_QUERY: RegExp;
+		export let REGEXP_FRAGMENT: RegExp;
 		export let ID: string;
 		export let REGEXP_ID: RegExp;
 		export let HASH: string;
